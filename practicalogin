@@ -1,0 +1,39 @@
+<html>
+	<head>  
+		<title>Ejemplo Basico CSS</title>
+		<link href="CSS/style.css" rel="stylesheet" type"text/css"/>
+		<script type="text/javascript">
+			function mostrar1(){
+				document.getElementById("contenedor1").style.display='block';
+				document.getElementById("contenedor2").style.visibility='hidden';
+			}
+			function mostrar2(){
+				document.getElementById("contenedor1").style.display='block';
+				document.getElementById("contenedor2").style.visibility='hidden';
+			}
+		</script>
+	</head>
+<body>
+	<div class="container">
+            <div class="hero-unit">
+			
+                <p><center><h2><img src="images/tesi.jpg" height="50" left="40">  &nbsp; TECNOLOGICO DE ESTUDIOS SUPERIORES DE IXTAPALUCA &nbsp;    <img src="images/mex.jpg" height="50" left="50"><center></h2>
+            </div>
+
+	<div id="header"></div>
+	<div id="contenedor1" class="container" style="display:none;">
+		<span onclick="mostrar1()">
+		</span>
+		
+			<h1 align="center"><p>Usuario:<input type="text" input maxlength="14" name="Usuario"/></p></h1>
+			<h1 align="center"><p>Password:<input type="text" input maxlength="10" name="Password"/></p></h1> 
+			<h1 align="center"><input type="submit" value="Iniciar Sesion"></h1>
+	</div>
+	<div id="contenedor2" class="container" style="dysplay:none;">
+		<span onclick="mostrar2()">
+			<h1 align="center"><input type=image src="images/bien.jpg" width="600" height="300"></h1>
+		</span>
+	</div>
+	<div></div>
+</body>
+</html>
